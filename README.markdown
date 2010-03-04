@@ -1,6 +1,6 @@
-= Thor Addon
+# Thor Addon ##
 
-== Thor Patches
+## Thor Patches ##
 
 *append_line_to_file(path, *args, &block)*
 
@@ -10,7 +10,7 @@ Ensures a line AND a newline character is appended to the file
 
 Ensures has_gem? is used to guard against duplicate gem statements in Gemfile. Calls patches append_line_to_file for a pretty Gemfile result ;) 
 
-== Thor Extras
+## Thor Extras ##
 
 *cleanup_gemfile*
 
@@ -39,7 +39,7 @@ Calls add_gem for each gem_name in the array (no version or other parameters)
 *gemfile_txt*
 Returns the text of the Gemfile
 
-== TODO
+## TODO ##
 
 * Improve `add_gem` to allow for all the other gem parameters as options!
 * Improve `add_gems` to allow for named group block sth. like:
@@ -60,7 +60,7 @@ group :test do
 end
 </pre>
 
-== Note on Patches/Pull Requests
+## Note on Patches/Pull Requests ##
  
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -70,6 +70,6 @@ end
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+## Copyright ##
 
 Copyright (c) 2010 Kristian Mandrup. See LICENSE for details.
