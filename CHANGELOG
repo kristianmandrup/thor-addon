@@ -3,11 +3,18 @@
 === TODO
 
 * Improve `add_gem` to allow for all the other gem parameters as options!
-* Improve `add_gems` to allow for block sth. like:
+* Improve `add_gems` to allow for named group block sth. like:
 
-add_gems do |gems| 
+add_gems :test do |gems| 
   gems.add 'my_gem', '>1.0', :git => '...'
   gems.add 'my_other_gem', '>2.1', :git => '...'  
+end
+
+=> 
+
+group :test do
+  gem 'my_gem',       '>1.0', :git => '...'
+  gem 'my_other_gem', '>2.1', :git => '...'    
 end
 
 === 03-03-2010
