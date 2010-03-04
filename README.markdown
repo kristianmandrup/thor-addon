@@ -26,6 +26,7 @@ Checks if there is already a gem '...' statement for a particular gem in the Gem
 Checks if the particular plugin is already installed
 
 *add_gem(gem_name, gem_version = nil)*
+
 Adds a gem statement to the Gemfile of the simple form: 
 
 gem 'gem_name', 'version'
